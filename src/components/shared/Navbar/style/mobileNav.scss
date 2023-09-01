@@ -1,0 +1,83 @@
+.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    width: 350px;
+    max-width: 83%;
+    padding: 15px;
+    animation: slideRight 0.3s ease forwards;
+    z-index: 1000;
+    .mobile__logo {
+        margin-bottom: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        .logo {
+            font-size: 24px;
+            color: black;
+            font-weight: 500;
+            letter-spacing: 1.124;
+        }
+        .hive__icon {
+            font-size: 24px;
+            color: orange;
+        }
+    }
+    .mobile__links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .mobile__link {
+            &::before {
+                content: '⚫️';
+            }
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            gap: 0.3rem;
+            align-items: center;
+            border-radius: 25px;
+            background-color: rgb(247, 189, 82);
+            a {
+                color: black;
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 1.124;
+            }
+        }
+    }
+    .mobile__auth {
+        margin-top: 35px;
+        display: flex;
+        gap: 1.2rem;
+        .auth__btn {
+            display: flex;
+            gap: 0.3rem;
+        }
+    }
+}
+
+
+@keyframes slideRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+
+@media (max-width: 345px){
+    .auth__btn {
+        width: 50%;
+        font-size: 15px;
+        .join__btn {
+            font-size: 20px;
+        }
+    }
+}

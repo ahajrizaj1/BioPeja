@@ -1,0 +1,31 @@
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./../../../assets/dmitry-grigoriev-yxXpjF-RrnA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 30px;
+    h1 {
+        margin-bottom: 15px;
+        font-size: 45px;
+    }
+    p {
+        font-size: 19px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 380px){
+    .hero{
+        padding: 45px;
+    }
+}

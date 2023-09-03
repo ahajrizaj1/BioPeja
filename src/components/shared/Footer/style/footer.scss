@@ -1,11 +1,13 @@
 .footer {
     width: 100%;
-    padding: 30px;
+    padding: 100px;
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('./../../../../assets//art-rachen-Asj5DFw8UAw-unsplash.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
     .icons {
         display: flex;
         gap: 3rem;
@@ -50,6 +52,11 @@
     }
 }
 
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media (max-width: 500px){
     .footer {
@@ -64,5 +71,9 @@
         .submit__btn {
             transform: translateY(-15px);
         }
+    }
+    .footer__container{
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }

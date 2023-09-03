@@ -1,4 +1,4 @@
-import { Hive, Login, JoinFull} from "@mui/icons-material";
+import { Hive, Login, JoinFull } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style/mobileNav.scss";
@@ -8,7 +8,6 @@ import { Button } from "@mui/material";
 const MobileNav = () => {
   return (
     <nav className="mobile">
-        
       <div className="mobile__logo">
         <Link to="/" className="logo">
           BioPeja
@@ -33,9 +32,11 @@ const MobileNav = () => {
         </div>
       </div>
       <div className="mobile__auth">
-        <Button className="auth__btn" variant="outlined" color="warning">
-          Log In <Login />
-        </Button>
+        <Link to="/login">
+          <Button className="auth__btn" variant="outlined" color="warning">
+            Log In <Login />
+          </Button>
+        </Link>
         <Button className="auth__btn" variant="outlined" color="warning">
           Sign Up <JoinFull className="join__btn" />
         </Button>

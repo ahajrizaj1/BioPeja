@@ -1,0 +1,58 @@
+.form__container {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    form {
+        width: 40%;
+
+        label {
+            font-size: 20px;
+            color: white;
+            font-weight: 500;
+        }
+        .form-text {
+            color: white;
+        }
+        .btn {
+            width: 100%;
+            background-color: orangered;
+            border: none;
+            &:hover{
+                background-color: rgba(255, 68, 0, 0.788);
+            }
+        }
+    }
+    
+}
+
+
+.error {
+    color: red;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: white;
+}
+
+
+@media (max-width: 800px){
+    .error {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 690px){
+    .form__container{
+        padding: 35px;
+    }
+}
+
+@media (max-width: 450px){
+    .form__container {
+        padding: 30px;
+        form {
+            width: 100%;
+        }
+    }
+}
